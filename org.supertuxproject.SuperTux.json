@@ -108,7 +108,7 @@
 			"sources":[
 				{
 					"type":"archive",
-					"url": "https://www.dropbox.com/s/gqeog05nc7k95sd/glu-9.0.0.tar.gz?dl=1",
+					"url": "https://github.com/flathub/org.supertuxproject.SuperTux/raw/master/glu-9.0.0.tar.gz",
 					"sha256": "4387476a1933f36fec1531178ea204057bbeb04cc2d8396c9ea32720a1f7e264"
 				}
 			]
