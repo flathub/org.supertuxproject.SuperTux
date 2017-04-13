@@ -17,7 +17,6 @@
 	"modules":[
 		{
 			"name": "libsndfile",
-			"buildsystem": "autotools",
 			"sources": [
 				{
 					"type": "archive",
@@ -28,7 +27,6 @@
 		},
 		{
 			"name": "libogg",
-			"buildsystem": "autotools",
 			"sources": [
 				{
 					"type": "archive",
@@ -39,7 +37,6 @@
 		},
 		{
 			"name": "libvorbis",
-			"buildsystem": "autotools",
 			"sources": [
 				{
 					"type": "archive",
@@ -99,7 +96,6 @@
 		},
 		{
 			"name": "glu",
-			"buildsystem": "autotools",
 			"sources":[
 				{
 					"type":"archive",
