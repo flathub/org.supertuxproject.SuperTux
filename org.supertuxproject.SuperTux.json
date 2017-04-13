@@ -14,6 +14,15 @@
 		"--share=network",
 		"--device=dri"
 	],
+	"cleanup": [
+		"/include",
+		"/lib/pkgconfig",
+		"/share/aclocal",
+		"/share/man",
+		"/share/doc",
+		"*.la",
+		"*.a"
+	],
 	"modules":[
 		{
 			"name": "libsndfile",
@@ -107,7 +116,7 @@
 		{
 			"name": "supertux",
 			"buildsystem": "cmake",
-			"config-opts": ["-DINSTALL_SUBDIR_SHARE=share/supertux2", "-DINSTALL_SUBDIR_BIN=bin"],
+			"config-opts": ["-DINSTALL_SUBDIR_SHARE=share/supertux2", "-DINSTALL_SUBDIR_BIN=bin", "-DCMAKE_BUILD_TYPE=\"Release\""],
 			"sources":[
 				{
 					"type":"archive",
@@ -119,8 +128,7 @@
 					"path": "supertux.patch"
 				}
 			],
-			"post-install": ["ln -s /app/lib64/libGLEW.so.2.0 /app/lib/libGLEW.so.2.0"],
-			"cleanup": ["/include"]
+			"post-install": ["ln -s /app/lib64/libGLEW.so.2.0 /app/lib/libGLEW.so.2.0"]
 		}
 	]
 }
