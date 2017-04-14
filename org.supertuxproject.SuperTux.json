@@ -95,8 +95,8 @@
 			"sources":[
 				{
 					"type":"archive",
-					"url": "https://github.com/flathub/org.supertuxproject.SuperTux/raw/master/glu-9.0.0.tar.gz",
-					"sha256": "4387476a1933f36fec1531178ea204057bbeb04cc2d8396c9ea32720a1f7e264"
+					"url": "https://mesa.freedesktop.org/archive/glu/glu-9.0.0.tar.bz2",
+					"sha256": "1f7ad0d379a722fcbd303aa5650c6d7d5544fde83196b42a73d1193568a4df12"
 				}
 			]
 		},
