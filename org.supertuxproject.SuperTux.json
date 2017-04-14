@@ -71,7 +71,18 @@
 		},
 		{
 			"name": "glew",
-			"buildsystem": "simple",
+			"no-autogen": true,
+			"make-args": [
+				"GLEW_PREFIX=/app",
+				"GLEW_DEST=/app",
+				"LIBDIR=/app/lib"
+			],
+			"make-install-args": [
+				"GLEW_PREFIX=/app",
+				"GLEW_DEST=/app",
+				"LIBDIR=/app/lib"
+			],
+
 			"sources":
 			[
 				{
@@ -79,8 +90,7 @@
 					"url": "https://sourceforge.net/projects/glew/files/glew/2.0.0/glew-2.0.0.tgz",
 					"sha256": "c572c30a4e64689c342ba1624130ac98936d7af90c3103f9ce12b8a0c5736764"
 				}
-			],
-			"build-commands": ["make", "GLEW_DEST=/app make install"]
+			]
 		},
 		{
 			"name": "glbinding",
@@ -120,8 +130,7 @@
 					"type": "patch",
 					"path": "supertux.patch"
 				}
-			],
-			"post-install": ["ln -s /app/lib64/libGLEW.so.2.0 /app/lib/libGLEW.so.2.0"]
+			]
 		}
 	]
 }
