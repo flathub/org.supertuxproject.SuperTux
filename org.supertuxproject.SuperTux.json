@@ -116,6 +116,26 @@
 			]
 		},
 		{
+			"name": "openal",
+			"buildsystem": "cmake",
+			"cleanup": [ "/bin" ],
+			"config-opts": [
+				"-DCMAKE_INSTALL_LIBDIR=lib",
+				"-DCMAKE_BUILD_TYPE=Release"
+			],
+			"sources": [
+				{
+					"type": "archive",
+					"url": "http://kcat.strangesoft.net/openal-releases/openal-soft-1.17.2.tar.bz2",
+					"sha256": "a341f8542f1f0b8c65241a17da13d073f18ec06658e1a1606a8ecc8bbc2b3314"
+				},
+				{
+					"type": "patch",
+					"path": "openal-soft-arm_neon-only-for-32bit.patch"
+				}
+			]
+		},
+		{
 			"name": "supertux",
 			"buildsystem": "cmake",
 			"config-opts": ["-DINSTALL_SUBDIR_SHARE=share/supertux2", "-DINSTALL_SUBDIR_BIN=bin", "-DCMAKE_BUILD_TYPE=\"Release\""],
