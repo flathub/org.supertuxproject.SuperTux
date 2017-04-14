@@ -7,7 +7,8 @@
 	"rename-icon": "supertux",
 	"rename-desktop-file": "supertux2.desktop",
 	"rename-appdata-file": "supertux2.appdata.xml",
-	"finish-args":[
+	"finish-args":
+	[
 		"--socket=wayland",
 		"--socket=x11",
 		"--socket=pulseaudio",
@@ -23,7 +24,8 @@
 		"*.la",
 		"*.a"
 	],
-	"modules":[
+	"modules":
+	[
 		{
 			"name": "libsndfile",
 			"sources": [
@@ -70,7 +72,8 @@
 		{
 			"name": "glew",
 			"buildsystem": "simple",
-			"sources":[
+			"sources":
+			[
 				{
 					"type":"archive",
 					"url": "https://sourceforge.net/projects/glew/files/glew/2.0.0/glew-2.0.0.tgz",
@@ -82,7 +85,8 @@
 		{
 			"name": "glbinding",
 			"buildsystem": "cmake",
-			"sources":[
+			"sources":
+			[
 				{
 					"type":"archive",
 					"url": "https://github.com/cginternals/glbinding/archive/v2.1.1.tar.gz",
@@ -92,7 +96,8 @@
 		},
 		{
 			"name": "glu",
-			"sources":[
+			"sources":
+			[
 				{
 					"type":"archive",
 					"url": "https://mesa.freedesktop.org/archive/glu/glu-9.0.0.tar.bz2",
@@ -104,7 +109,8 @@
 			"name": "supertux",
 			"buildsystem": "cmake",
 			"config-opts": ["-DINSTALL_SUBDIR_SHARE=share/supertux2", "-DINSTALL_SUBDIR_BIN=bin", "-DCMAKE_BUILD_TYPE=\"Release\""],
-			"sources":[
+			"sources":
+			[
 				{
 					"type":"archive",
 					"url": "https://github.com/SuperTux/supertux/releases/download/v0.5.1/SuperTux-v0.5.1-Source.tar.gz",
