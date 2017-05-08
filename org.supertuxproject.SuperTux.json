@@ -24,8 +24,8 @@
 		"*.la",
 		"*.a"
 	],
-	"modules":
-	[
+	"modules": [
+		"shared-modules/glu/glu-9.0.0.json",
 		{
 			"name": "boost",
 			"buildsystem": "simple",
@@ -70,17 +70,6 @@
 					"type":"archive",
 					"url": "https://github.com/cginternals/glbinding/archive/v2.1.1.tar.gz",
 					"sha256": "253671f2b730a6efa55de92a704938bb0f1761d151f3f8e87c043c51d46ea1e4"
-				}
-			]
-		},
-		{
-			"name": "glu",
-			"sources":
-			[
-				{
-					"type":"archive",
-					"url": "https://mesa.freedesktop.org/archive/glu/glu-9.0.0.tar.bz2",
-					"sha256": "1f7ad0d379a722fcbd303aa5650c6d7d5544fde83196b42a73d1193568a4df12"
 				}
 			]
 		},
