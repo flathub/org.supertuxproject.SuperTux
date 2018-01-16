@@ -64,8 +64,21 @@
 					"sha256": "c9dc3b42991ce5c5d0d0cb94e44c4ec2373ad09029940f0e92331e7e9ada0ac5"
 				},
 				{
-					"type": "patch",
-					"path": "supertux.patch"
+					"type": "file",
+					"path": "supertux-64x64.png"
+				},
+				{
+					"type": "file",
+					"path": "supertux-128x128.png"
+				},
+				{
+					"type": "shell",
+					"commands": [
+						"install -Dm644 data/images/engine/icons/supertux.png /app/share/icons/hicolor/48x48/apps/",
+						"install -Dm644 supertux-64x64.png /app/share/icons/hicolor/64x64/apps/supertux.png",
+						"install -Dm644 supertux-128x128.png /app/share/icons/hicolor/128x128/apps/supertux.png",
+						"install -Dm644 data/images/engine/icons/supertux-256x256.png /app/share/icons/hicolor/256x256/apps/supertux.png"
+					]
 				}
 			]
 		}
