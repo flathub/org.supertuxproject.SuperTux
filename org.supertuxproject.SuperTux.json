@@ -14,7 +14,7 @@
 		"--share=ipc",
 		"--socket=pulseaudio",
 		"--share=network",
-		"--device=dri"
+		"--device=all"
 	],
 	"cleanup": [
 		"/include",
