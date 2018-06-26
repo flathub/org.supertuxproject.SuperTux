@@ -3,7 +3,7 @@
     "runtime": "org.freedesktop.Platform",
     "runtime-version": "1.6",
     "sdk": "org.freedesktop.Sdk",
-    "command": "supertux",
+    "command": "supertux2",
     "modules": [
         {
             "name": "libogg",
