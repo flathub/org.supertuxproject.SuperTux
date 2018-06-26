@@ -86,7 +86,7 @@
             "buildsystem": "simple",
             "build-commands": [
                 "./bootstrap.sh",
-                "./b2 install --prefix=/app --with-system --with-filesystem --with-signals"
+                "./b2 install --prefix=/app --with-system --with-filesystem --with-signals --with-locale --with-date_time"
             ],
             "sources": [
                 {
