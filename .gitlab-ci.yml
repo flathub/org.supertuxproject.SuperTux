@@ -33,11 +33,11 @@ build:flatpak:
     - apt-get -qq -y install flatpak flatpak-builder
     - flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
     - flatpak install -y flathub org.freedesktop.Platform org.freedesktop.Sdk
-    - flatpak-builder --repo=build-flatpak-repo/ build-flatpak/ org.supertuxproject.SuperTux.json
-    - flatpak build-bundle build-flatpak-repo/ supertux.flatpak org.supertuxproject.SuperTux
+    - flatpak-builder --repo=supertux-repo/ supertux-build/ org.supertuxproject.SuperTux.json
+    - flatpak build-bundle supertux-repo/ supertux.flatpak org.supertuxproject.SuperTux
   artifacts:
     paths:
       - supertux.flatpak
-      - build-flatpak-repo
+      - supertux-repo
 
 # EOF #
