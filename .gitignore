@@ -1,3 +1,4 @@
-.flatpak-builder
-supertux-repo
-supertux-build
+*~
+/.flatpak-builder/
+/supertux-build
+/supertux-repo
