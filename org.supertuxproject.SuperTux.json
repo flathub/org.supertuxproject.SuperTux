@@ -39,7 +39,7 @@
 					"sha256": "5721818253e6a0989583192f96782c4a98eb6204965316df9f5ad75819225ca9"
 				}
 			],
-			"build-commands": ["./bootstrap.sh --prefix=/app --with-libraries=date_time,filesystem", "./b2 headers", "./b2 install"]
+			"build-commands": ["./bootstrap.sh --prefix=/app --with-libraries=date_time,filesystem,locale", "./b2 headers", "./b2 install"]
 		},
 		{
 			"name": "supertux",
