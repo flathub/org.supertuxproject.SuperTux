@@ -35,8 +35,8 @@
 			[
 				{
 					"type": "archive",
-					"url": "https://downloads.sourceforge.net/project/boost/boost/1.60.0/boost_1_60_0.tar.bz2",
-					"sha256": "686affff989ac2488f79a97b9479efb9f2abae035b5ed4d8226de6857933fd3b"
+					"url": "https://downloads.sourceforge.net/project/boost/boost/1.66.0/boost_1_66_0.tar.bz2",
+					"sha256": "5721818253e6a0989583192f96782c4a98eb6204965316df9f5ad75819225ca9"
 				}
 			],
 			"build-commands": ["./bootstrap.sh --prefix=/app --with-libraries=date_time,filesystem", "./b2 headers", "./b2 install"]
