@@ -20,8 +20,6 @@
 		"/include",
 		"/lib/pkgconfig",
 		"/share/aclocal",
-		"/share/man",
-		"/share/doc",
 		"*.la",
 		"*.a"
 	],
