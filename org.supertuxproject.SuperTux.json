@@ -52,6 +52,10 @@
 				},
 				{
 					"type": "file",
+					"path": "supertux2.appdata.xml"
+				},
+				{
+					"type": "file",
 					"path": "supertux-64x64.png"
 				},
 				{
