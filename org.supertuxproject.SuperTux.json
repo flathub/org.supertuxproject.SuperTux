@@ -4,7 +4,7 @@
 	"runtime-version": "1.6",
 	"sdk": "org.freedesktop.Sdk",
 	"command": "supertux2",
-	"rename-icon": "supertux",
+	"rename-icon": "supertux2",
 	"rename-desktop-file": "supertux2.desktop",
 	"rename-appdata-file": "supertux2.appdata.xml",
 	"finish-args":
@@ -56,19 +56,16 @@
 				},
 				{
 					"type": "file",
-					"path": "supertux-64x64.png"
+					"path": "supertux2.desktop"
 				},
 				{
 					"type": "file",
-					"path": "supertux-128x128.png"
+					"path": "supertux2.svg"
 				},
 				{
 					"type": "shell",
 					"commands": [
-						"install -Dm644 data/images/engine/icons/supertux.png /app/share/icons/hicolor/48x48/apps/supertux.png",
-						"install -Dm644 supertux-64x64.png /app/share/icons/hicolor/64x64/apps/supertux.png",
-						"install -Dm644 supertux-128x128.png /app/share/icons/hicolor/128x128/apps/supertux.png",
-						"install -Dm644 data/images/engine/icons/supertux-256x256.png /app/share/icons/hicolor/256x256/apps/supertux.png"
+						"install -Dm644 supertux2.svg /app/share/icons/hicolor/scalable/apps/supertux2.svg"
 					]
 				}
 			]
