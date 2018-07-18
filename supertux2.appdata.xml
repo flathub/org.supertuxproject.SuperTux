@@ -42,4 +42,7 @@
   <provides>
     <binary>supertux2</binary>
   </provides>
+  <releases>
+    <release version="0.5.1" date="2016-11-05" />
+  </releases>
 </component>
