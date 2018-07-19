@@ -32,11 +32,11 @@
     <category>ArcadeGame</category>
   </categories>
   <screenshots>
-    <screenshot type="default">https://www.supertux.org/images/0_4_0/0_4_0_1.png</screenshot>
-    <screenshot>https://www.supertux.org/images/0_4_0/0_4_0_5.png</screenshot>
-    <screenshot>https://www.supertux.org/images/0_4_0/0_4_0_6.png</screenshot>
-    <screenshot>https://www.supertux.org/images/0_4_0/0_4_0_9.png</screenshot>
-    <screenshot>https://www.supertux.org/images/0_4_0/0_4_0_10.png</screenshot>
+    <screenshot type="default">https://raw.githubusercontent.com/flathub/org.supertuxproject.SuperTux/master/screenshot-0.5.1_1.png</screenshot>
+    <screenshot>https://raw.githubusercontent.com/flathub/org.supertuxproject.SuperTux/master/screenshot-0.5.1_2.png</screenshot>
+    <screenshot>https://raw.githubusercontent.com/flathub/org.supertuxproject.SuperTux/master/screenshot-0.5.1_3.png</screenshot>
+    <screenshot>https://raw.githubusercontent.com/flathub/org.supertuxproject.SuperTux/master/screenshot-0.5.1_4.png</screenshot>
+    <screenshot>https://raw.githubusercontent.com/flathub/org.supertuxproject.SuperTux/master/screenshot-0.5.1_5.png</screenshot>
   </screenshots>
   <launchable type="desktop-id">supertux2.desktop</launchable>
   <provides>
