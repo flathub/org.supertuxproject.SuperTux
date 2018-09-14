@@ -26,6 +26,26 @@
 		"*.a"
 	],
 	"modules": [
+		{
+			"name": "fribidi",
+			"sources": [
+				{
+					"type": "archive",
+					"url": "https://github.com/fribidi/fribidi/releases/download/v1.0.5/fribidi-1.0.5.tar.bz2",
+					"sha256": "6a64f2a687f5c4f203a46fa659f43dd43d1f8b845df8d723107e8a7e6158e4ce"
+				}
+			]
+		},
+		{
+			"name": "raqm",
+			"sources": [
+				{
+					"type": "git",
+					"url": "https://github.com/HOST-Oman/libraqm/releases/download/v0.5.0/raqm-0.5.0.tar.gz",
+					"sha256": "a06036ad6bd0abdc656de0b4189cc7f397ec1beb17061012732e32761a02c989"
+				}
+			]
+	    },
 		"shared-modules/glu/glu-9.0.0.json",
 		"shared-modules/glew/glew.json",
 		{
