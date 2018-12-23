@@ -68,7 +68,7 @@
 		                {
         	        		"type": "git",
 			                "url": "https://github.com/SuperTux/supertux.git",
-			                "branch": "master"
+			                "tag": "v0.6.0"
 		                }
 			]
 		}
