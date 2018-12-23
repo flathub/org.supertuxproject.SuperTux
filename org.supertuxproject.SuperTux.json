@@ -72,7 +72,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/SuperTux/supertux.git",
-                    "tag": "v0.6.0"
+                    "commit": "1d7d3970e12acc3ebfe7281ea80146d6cfd2c634"
                 }
             ]
         }
