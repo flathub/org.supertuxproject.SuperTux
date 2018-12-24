@@ -72,6 +72,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/SuperTux/supertux.git",
+                    "disable-shallow-clone": true,
                     "commit": "1d7d3970e12acc3ebfe7281ea80146d6cfd2c634"
                 }
             ]
