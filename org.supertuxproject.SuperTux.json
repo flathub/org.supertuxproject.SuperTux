@@ -67,13 +67,16 @@
         {
             "name": "supertux",
             "buildsystem": "cmake",
-            "config-opts": ["-DINSTALL_SUBDIR_SHARE=share/supertux2", "-DINSTALL_SUBDIR_BIN=bin", "-DCMAKE_BUILD_TYPE=\"Release\""],
+            "config-opts": ["-DINSTALL_SUBDIR_SHARE=share/supertux2",
+                            "-DINSTALL_SUBDIR_BIN=bin",
+                            "-DCMAKE_BUILD_TYPE=\"Release\"",
+                            "-DIS_SUPERTUX_RELEASE=ON"],
             "sources": [
                 {
                     "type": "git",
                     "url": "https://github.com/SuperTux/supertux.git",
                     "disable-shallow-clone": true,
-                    "commit": "1d7d3970e12acc3ebfe7281ea80146d6cfd2c634"
+                    "commit": "d75e876662c25dff49f9a15f8386679c1077cc90"
                 }
             ]
         }
