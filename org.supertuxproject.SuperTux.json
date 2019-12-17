@@ -31,8 +31,8 @@
             [
                 {
                     "type": "archive",
-                    "url": "https://github.com/fribidi/fribidi/releases/download/v1.0.5/fribidi-1.0.5.tar.bz2",
-                    "sha256": "6a64f2a687f5c4f203a46fa659f43dd43d1f8b845df8d723107e8a7e6158e4ce"
+                    "url": "https://github.com/fribidi/fribidi/releases/download/v1.0.8/fribidi-1.0.8.tar.bz2",
+                    "sha256": "94c7b68d86ad2a9613b4dcffe7bbeb03523d63b5b37918bdf2e4ef34195c1e6c"
                 }
             ]
         },
@@ -41,12 +41,12 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/HOST-Oman/libraqm/releases/download/v0.5.0/raqm-0.5.0.tar.gz",
-                    "sha256": "a06036ad6bd0abdc656de0b4189cc7f397ec1beb17061012732e32761a02c989"
+                    "url": "https://github.com/HOST-Oman/libraqm/releases/download/v0.7.0/raqm-0.7.0.tar.gz",
+                    "sha256": "e28575ecdd4e8a1d277d9be8268bb663ce1e476aaf55eb0456787821ddf0f941"
                 }
             ]
         },
-        "shared-modules/glu/glu-9.0.0.json",
+        "shared-modules/glu/glu-9.json",
         "shared-modules/glew/glew.json",
         {
             "name": "boost",
@@ -54,8 +54,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://dl.bintray.com/boostorg/release/1.68.0/source/boost_1_68_0.tar.bz2",
-                    "sha256": "7f6130bc3cf65f56a618888ce9d5ea704fa10b462be126ad053e80e553d6d8b7"
+                    "url": "https://dl.bintray.com/boostorg/release/1.72.0/source/boost_1_72_0.tar.bz2",
+                    "sha256": "59c9b274bc451cf91a9ba1dd2c7fdcaf5d60b1b3aa83f2c9fa143417cc660722"
                 }
             ],
             "build-commands": [
