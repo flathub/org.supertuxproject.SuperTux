@@ -1,7 +1,7 @@
 {
     "app-id": "org.supertuxproject.SuperTux",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "18.08",
+    "runtime-version": "19.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "supertux2",
     "rename-icon": "supertux2",
@@ -76,7 +76,7 @@
                     "type": "git",
                     "url": "https://github.com/SuperTux/supertux.git",
                     "disable-shallow-clone": true,
-                    "commit": "v0.6.1"
+                    "commit": "v0.6.1.1"
                 }
             ]
         }
