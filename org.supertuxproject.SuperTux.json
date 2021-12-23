@@ -66,6 +66,23 @@
             ]
         },
         {
+            "name": "glm",
+            "buildsystem": "cmake-ninja",
+            "cleanup": ["*"],
+            "no-make-install": true,
+            "post-install": [
+                "install -d ${FLATPAK_DEST}/include",
+                "cp -R glm ${FLATPAK_DEST}/include"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/g-truc/glm/releases/download/0.9.9.8/glm-0.9.9.8.zip",
+                    "sha256": "37e2a3d62ea3322e43593c34bae29f57e3e251ea89f4067506c94043769ade4c"
+                }
+            ]
+        },
+        {
             "name": "supertux",
             "build-options" : {
               "cflags":"-I/usr/include/SDL2",
@@ -81,7 +98,7 @@
                     "type": "git",
                     "url": "https://github.com/SuperTux/supertux.git",
                     "disable-shallow-clone": true,
-                    "commit": "35c3e622f8e775c237afe9ae1123c9cfeea7e401"
+                    "commit": "v0.6.3"
                 }
             ]
         }
