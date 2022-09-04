@@ -1,7 +1,7 @@
 {
     "app-id": "org.supertuxproject.SuperTux",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "21.08",
+    "runtime-version": "22.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "supertux2",
     "rename-icon": "supertux2",
@@ -89,16 +89,22 @@
               "cxxflags":"-I/usr/include/SDL2"
             },
             "buildsystem": "cmake",
-            "config-opts": ["-DINSTALL_SUBDIR_SHARE=share/supertux2",
-                            "-DINSTALL_SUBDIR_BIN=bin",
-                            "-DCMAKE_BUILD_TYPE=\"Release\"",
-                            "-DIS_SUPERTUX_RELEASE=ON"],
+            "config-opts": [
+                "-DINSTALL_SUBDIR_SHARE=share/supertux2",
+                "-DINSTALL_SUBDIR_BIN=bin",
+                "-DCMAKE_BUILD_TYPE=Release",
+                "-DIS_SUPERTUX_RELEASE=ON"
+            ],
             "sources": [
                 {
                     "type": "git",
                     "url": "https://github.com/SuperTux/supertux.git",
                     "disable-shallow-clone": true,
                     "commit": "v0.6.3"
+                },
+                {
+                    "type": "patch",
+                    "path": "supertux-build-fixes.patch"
                 }
             ]
         }
