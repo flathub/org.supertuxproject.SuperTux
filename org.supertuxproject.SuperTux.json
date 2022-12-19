@@ -10,7 +10,7 @@
     "finish-args":
     [
         "--socket=wayland",
-        "--socket=x11",
+        "--socket=fallback-x11",
         "--share=ipc",
         "--socket=pulseaudio",
         "--share=network",
@@ -25,6 +25,7 @@
         "*.a"
     ],
     "modules": [
+	"shared-modules/SDL2/SDL2-2.26.1-with-libdecor.json",
         {
             "name": "fribidi",
             "sources":
