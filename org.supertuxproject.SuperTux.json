@@ -108,6 +108,7 @@
                     "path": "supertux-build-fixes.patch"
                 },
                 {
+                    "//": "Remember to delete this patch when the next SuperTux version gets released, as the appdata fix has also been merged into SuperTux's source code: https://github.com/SuperTux/supertux/pull/2668",
                     "type": "patch",
                     "path": "supertux-appdata.patch"
                 }
