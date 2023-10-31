@@ -1,0 +1,12 @@
+diff --git a/supertux2.appdata.xml b/supertux2.appdata.xml
+--- a/supertux2.appdata.xml	2023-10-25 13:02:23.300966139 +0100
++++ b/supertux2.appdata.xml	2023-10-25 13:03:15.645638888 +0100
+@@ -2,7 +2,7 @@
+ <component type="desktop-application">
+   <id>org.supertuxproject.SuperTux</id>
+   <metadata_license>CC0-1.0</metadata_license>
+-  <project_license>GPL-3.0+ AND CC-BY-SA-2.0</project_license>
++  <project_license>GPL-3.0-or-later AND CC-BY-SA-2.0</project_license>
+   <content_rating type="oars-1.1">
+     <content_attribute id="violence-cartoon">mild</content_attribute>
+     <content_attribute id="language-humor">mild</content_attribute>

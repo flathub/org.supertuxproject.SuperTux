@@ -1,7 +1,7 @@
 {
     "app-id": "org.supertuxproject.SuperTux",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "22.08",
+    "runtime-version": "23.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "supertux2",
     "rename-icon": "supertux2",
@@ -106,6 +106,11 @@
                 {
                     "type": "patch",
                     "path": "supertux-build-fixes.patch"
+                },
+                {
+                    "//": "Remember to delete this patch when the next SuperTux version gets released, as the appdata fix has also been merged into SuperTux's source code: https://github.com/SuperTux/supertux/pull/2668",
+                    "type": "patch",
+                    "path": "supertux-appdata.patch"
                 }
             ]
         }
