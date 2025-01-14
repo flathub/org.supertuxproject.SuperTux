@@ -1,7 +1,7 @@
 {
     "app-id": "org.supertuxproject.SuperTux",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "23.08",
+    "runtime-version": "24.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "supertux2",
     "rename-icon": "supertux2",
@@ -14,7 +14,8 @@
         "--share=ipc",
         "--socket=pulseaudio",
         "--share=network",
-        "--device=all"
+        "--device=all",
+        "--env=SDL_VIDEODRIVER=wayland,x11"
     ],
     "cleanup":
     [
@@ -25,15 +26,14 @@
         "*.a"
     ],
     "modules": [
-	"shared-modules/SDL2/SDL2-2.26.1-with-libdecor.json",
         {
             "name": "fribidi",
             "sources":
             [
                 {
                     "type": "archive",
-                    "url": "https://github.com/fribidi/fribidi/releases/download/v1.0.11/fribidi-1.0.11.tar.xz",
-                    "sha256": "30f93e9c63ee627d1a2cedcf59ac34d45bf30240982f99e44c6e015466b4e73d"
+                    "url": "https://github.com/fribidi/fribidi/releases/download/v1.0.16/fribidi-1.0.16.tar.xz",
+                    "sha256": "1b1cde5b235d40479e91be2f0e88a309e3214c8ab470ec8a2744d82a5a9ea05c"
                 }
             ]
         },
@@ -43,8 +43,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/HOST-Oman/libraqm/releases/download/v0.8.0/raqm-0.8.0.tar.xz",
-                    "sha256": "e9b5ed5e6c1ed1341307d3fba5e325cd65af60f89616597c4a191b1aa6e95d1e"
+                    "url": "https://github.com/HOST-Oman/libraqm/releases/download/v0.10.2/raqm-0.10.2.tar.xz",
+                    "sha256": "3e936f2c4e585c3168dbe121fcb7d6c55702027c68e491076381da5c4060559c"
                 }
             ]
         },
@@ -56,8 +56,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://boostorg.jfrog.io/artifactory/main/release/1.78.0/source/boost_1_78_0.tar.bz2",
-                    "sha256": "8681f175d4bdb26c52222665793eef08490d7758529330f98d3b29dd0735bccc"
+                    "url": "https://archives.boost.io/release/1.87.0/source/boost_1_87_0.tar.bz2",
+                    "sha256": "af57be25cb4c4f4b413ed692fe378affb4352ea50fbe294a11ef548f4d527d89"
                 }
             ],
             "build-commands": [
@@ -69,26 +69,16 @@
         {
             "name": "glm",
             "buildsystem": "cmake-ninja",
-            "cleanup": ["*"],
-            "no-make-install": true,
-            "post-install": [
-                "install -d ${FLATPAK_DEST}/include",
-                "cp -R glm ${FLATPAK_DEST}/include"
-            ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/g-truc/glm/releases/download/0.9.9.8/glm-0.9.9.8.zip",
-                    "sha256": "37e2a3d62ea3322e43593c34bae29f57e3e251ea89f4067506c94043769ade4c"
+                    "url": "https://github.com/g-truc/glm/archive/refs/tags/1.0.1.tar.gz",
+                    "sha256": "9f3174561fd26904b23f0db5e560971cbf9b3cbda0b280f04d5c379d03bf234c"
                 }
             ]
         },
         {
             "name": "supertux",
-            "build-options" : {
-              "cflags":"-I/usr/include/SDL2",
-              "cxxflags":"-I/usr/include/SDL2"
-            },
             "buildsystem": "cmake",
             "config-opts": [
                 "-DINSTALL_SUBDIR_SHARE=share/supertux2",
