@@ -14,7 +14,8 @@
         "--share=ipc",
         "--socket=pulseaudio",
         "--share=network",
-        "--device=all"
+        "--device=all",
+        "--env=SDL_VIDEODRIVER=wayland,x11"
     ],
     "cleanup":
     [
