@@ -1,7 +1,7 @@
 {
     "app-id": "org.supertuxproject.SuperTux",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "24.08",
+    "runtime-version": "25.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "supertux2",
     "rename-icon": "supertux2",
@@ -50,6 +50,7 @@
         },
         "shared-modules/glu/glu-9.json",
         "shared-modules/glew/glew.json",
+        "shared-modules/SDL2/SDL2_image.json",
         {
             "name": "boost",
             "buildsystem": "simple",
@@ -79,8 +80,9 @@
         },
         {
             "name": "supertux",
-            "buildsystem": "cmake",
+            "buildsystem": "cmake-ninja",
             "config-opts": [
+                "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
                 "-DINSTALL_SUBDIR_SHARE=share/supertux2",
                 "-DINSTALL_SUBDIR_BIN=bin",
                 "-DCMAKE_BUILD_TYPE=Release",
