@@ -15,8 +15,8 @@ finish-args:
   - --share=network
   - --device=all
 modules:
-  - external/shared-modules/SDL2/SDL2_image.json
-  - external/shared-modules/physfs/physfs.json
+  - shared-modules/SDL2/SDL2_image.json
+  - shared-modules/physfs/physfs.json
   - name: glm
     buildsystem: cmake
     sources:
@@ -38,3 +38,8 @@ modules:
       - type: git
         url: https://github.com/SuperTux/supertux.git
         branch: master
+  - name: shared-modules
+    source:
+      - type: git
+        url: https://github.com/flathub/shared-modules.git
+      
