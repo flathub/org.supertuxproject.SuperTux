@@ -5,7 +5,7 @@ sdk: org.freedesktop.Sdk
 command: supertux2
 rename-icon: supertux2
 rename-desktop-file: supertux2.desktop
-rename-appdata-file: supertux2.appdata.xml
+rename-appdata-file: org.supertuxproject.SuperTux.metainfo.xml
 finish-args:
   - --socket=wayland
   - --socket=fallback-x11
