@@ -4,7 +4,7 @@ runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 command: supertux2
 rename-icon: supertux2
-rename-desktop-file: supertux2.desktop.in
+rename-desktop-file: supertux2.desktop
 rename-appdata-file: supertux2.appdata.xml
 finish-args:
   - --socket=wayland
