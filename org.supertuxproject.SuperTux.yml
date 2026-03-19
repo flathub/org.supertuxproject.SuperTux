@@ -9,6 +9,7 @@ rename-appdata-file: supertux2.appdata.xml
 finish-args:
   - --socket=wayland
   - --socket=fallback-x11
+  - --socket=x11
   - --share=ipc
   - --socket=pulseaudio
   - --share=network
@@ -24,6 +25,10 @@ modules:
         sha256: 19edf2e860297efab1c74950e6076bf4dad9de483826bc95e2e0f2c758a43f65
   - name: supertux
     buildsystem: cmake-ninja
+    build-commands:
+      -install -Dm644 org.supertuxproject.SuperTux.metainfo.xml /app/share/metainfo/org.supertuxproject.SuperTux.metainfo.xml
+      -install -Dm644 supertux2.desktop /app/share/applications/supertux2.desktop
+      -install -Dm755 supertux2 /app/bin/supertux2
     config-opts:
       - -DINSTALL_SUBDIR_SHARE=share/supertux2
       - -DINSTALL_SUBDIR_BIN=bin
@@ -34,4 +39,4 @@ modules:
     sources:
       - type: git
         url: https://github.com/SuperTux/supertux.git
-        tag: v0.7.0
+        branch: master     
