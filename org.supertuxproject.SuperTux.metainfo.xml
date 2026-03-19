@@ -102,7 +102,7 @@
       <caption>A bunch of granitos standing behind Tux.</caption>
     </screenshot>
   </screenshots>
-  <launchable type="desktop-id">supertux2.desktop</launchable>
+  <launchable type="desktop-id">supertux2.desktop.in</launchable>
   <provides>
     <binary>supertux2</binary>
   </provides>
