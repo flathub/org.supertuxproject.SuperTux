@@ -34,3 +34,4 @@ modules:
     sources:
       - type: git
         url: https://github.com/SuperTux/supertux.git
+        tag: v0.7.0
