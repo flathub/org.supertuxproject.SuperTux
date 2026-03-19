@@ -25,6 +25,9 @@ modules:
   - name: supertux
     buildsystem: cmake-ninja
     build-commands:
+      - mkdir -p /app/share/metainfo
+      - mkdir -p /app/share/applications
+      - mkdir -p /app/bin
       - install -Dm644 org.supertuxproject.SuperTux.metainfo.xml /app/share/metainfo/org.supertuxproject.SuperTux.metainfo.xml
       - install -Dm644 supertux2.desktop /app/share/applications/supertux2.desktop
       - install -Dm755 supertux2 /app/bin/supertux2
