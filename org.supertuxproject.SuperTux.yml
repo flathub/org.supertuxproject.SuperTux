@@ -25,12 +25,12 @@ modules:
   - name: supertux
     buildsystem: cmake-ninja
     build-commands:
-      - mkdir -p /app/share/metainfo
-      - mkdir -p /app/share/applications
-      - mkdir -p /app/bin
-      - install -Dm644 org.supertuxproject.SuperTux.metainfo.xml /app/share/metainfo/org.supertuxproject.SuperTux.metainfo.xml
-      - install -Dm644 supertux2.desktop /app/share/applications/supertux2.desktop
-      - install -Dm755 supertux2 /app/bin/supertux2
+      - mkdir -p ${FLATPAK_DEST}/app/share/metainfo
+      - mkdir -p ${FLATPAK_DEST}/app/share/applications
+      - mkdir -p ${FLATPAK_DEST}/app/bin
+      - install -Dm644 org.supertuxproject.SuperTux.metainfo.xml ${FLATPAK_DEST}/app/share/metainfo/org.supertuxproject.SuperTux.metainfo.xml
+      - install -Dm644 supertux2.desktop ${FLATPAK_DEST}/app/share/applications/supertux2.desktop
+      - install -Dm755 supertux2 ${FLATPAK_DEST}/app/bin/supertux2
     config-opts:
       - -DINSTALL_SUBDIR_SHARE=share/supertux2
       - -DINSTALL_SUBDIR_BIN=bin
